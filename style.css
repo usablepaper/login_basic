@@ -1,0 +1,128 @@
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+body,
+h1,
+a,
+p,
+ul,
+li {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-size: initial;
+    font-weight: initial;
+    color: initial;
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.login-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 140px;
+    border: 1px solid #dbdbdb;
+    border-radius: 5px;
+    padding: 18px 15px 17px;
+}
+
+.login-text {
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 16px;
+    height: 15px;
+}
+
+.login-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 7px;
+    height: 40px;
+    background-color: #711bff;
+    border-radius: 4px;
+    margin-bottom: 17px;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.weniv-logo {
+    height: 15px;
+}
+
+.login-member {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 15px;
+    color: #767676;
+}
+
+.find-member {
+    display: flex;
+}
+
+.find-member a {
+    font-size: 12px;
+    font-weight: 400;
+    height: 15px;
+    color: inherit;
+    line-height: 100%;
+}
+
+.find-member a:nth-child(1) {
+    position: relative;
+    background-image: url(./images/icon-lock.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0 -1px;
+    padding-left: 20px;
+}
+
+.find-member a:nth-child(1)::after {
+    content: "|";
+    margin: 0 4px;
+}
+
+.join-member {
+    position: relative;
+    background-image: url(./images/icon-user.png);
+    background-repeat: no-repeat;
+    background-size: 16px 16px;
+    background-position: 0 -1px;
+    padding-left: 20px;
+    font-size: 12px;
+    font-weight: 400;
+    height: 15px;
+    color: inherit;
+    line-height: 1;
+    /* line-height: 100%; */
+}
