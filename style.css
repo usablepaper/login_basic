@@ -80,7 +80,6 @@ article {
 
 .login-member {
     display: flex;
-    align-items: center;
     justify-content: space-between;
     height: 15px;
     color: #767676;
@@ -103,7 +102,6 @@ article {
     background-image: url(./images/icon-lock.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-position: 0 -1px;
     padding-left: 20px;
 }
 
@@ -117,12 +115,10 @@ article {
     background-image: url(./images/icon-user.png);
     background-repeat: no-repeat;
     background-size: 16px 16px;
-    background-position: 0 -1px;
     padding-left: 20px;
     font-size: 12px;
     font-weight: 400;
     height: 15px;
     color: inherit;
     line-height: 1;
-    /* line-height: 100%; */
 }
